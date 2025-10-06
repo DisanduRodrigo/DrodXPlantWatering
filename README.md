@@ -326,6 +326,6 @@ These values are mapped to 0%–100% and used to determine `Dry` / `Moist` / `We
 
 This project is released under the **MIT License**.
 
-
+---
 
 🌿 Happy Gardening! 🚀
