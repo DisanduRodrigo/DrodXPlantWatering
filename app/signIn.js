@@ -85,7 +85,7 @@ export default function SignIn() {
             formData.append("password", password);
 
 
-            let response = await fetch("http://192.168.100.210:8080/DrodX_soil_moisture/SignIn",
+            let response = await fetch("http://10.126.203.7.210:8080/DrodX_soil_moisture/SignIn",
               {
                 method: "POST",
                 body: JSON.stringify(

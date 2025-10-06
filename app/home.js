@@ -11,7 +11,7 @@ export default function Home() {
   useEffect(() => {
     const intervalId = setInterval(async () => {
       try {
-        const response = await fetch("http://192.168.100.216/temp");
+        const response = await fetch("http://10.126.203.7/temp");
         if (response.ok) {
           const data = await response.json();
           setTempreture(data.temp);
@@ -27,7 +27,7 @@ export default function Home() {
   useEffect(() => {
     const intervalId = setInterval(async () => {
       try {
-        const response = await fetch("http://192.168.100.216/water");
+        const response = await fetch("http://10.126.203.7/water");
         if (response.ok) {
           const data = await response.json();
           setsoiilWaterLevel(data.water);

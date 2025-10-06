@@ -15,7 +15,7 @@ const Soil = () => {
   useEffect(() => {
     const intervalId = setInterval(async () => {
       try {
-        const response = await fetch("http://192.168.100.216/water");
+        const response = await fetch("http://10.126.203.7/water");
         if (response.ok) {
           const data = await response.json();
           setMoistureLevel(data.water);
@@ -51,7 +51,7 @@ const Soil = () => {
       console.log("Pump turned on"); 
 
       try {
-        const response = await fetch("http://192.168.100.216?status=1");
+        const response = await fetch("http://10.126.203.7?status=1");
         if (response.ok) {
           // console.log("Pump turned on");
         }else{
@@ -68,7 +68,7 @@ const Soil = () => {
       setPumpOn(false);
 
       try {
-        const response = await fetch("http://192.168.100.216?status=2");
+        const response = await fetch("http://10.126.203.7?status=2");
         if (response.ok) {
           // console.log("Pump turned off");
 
